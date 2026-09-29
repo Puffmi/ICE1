@@ -32,9 +32,7 @@ public class CardTrick {
             c.setValue(rand.nextInt(1,14));
             c.setSuit(Card.SUITS[rand.nextInt(1,4)]);
         }
-        
-       luckyCard.setSuit("Hearts");
-       luckyCard.setValue(10);
+        luckyCard = magicHand[rand.nextInt(1,7)];
         
         //insert code to ask the user for Card value and suit, create their card            
         System.out.println("Please enter suit: ");
@@ -65,10 +63,6 @@ public class CardTrick {
        else{
            System.out.println("Not lucky card.");
        }
-        //Then report the result here
-        
-        
-        // add one luckcard hard code 2,clubs
 
     }
     
