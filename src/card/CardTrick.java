@@ -33,7 +33,8 @@ public class CardTrick {
             c.setSuit(Card.SUITS[rand.nextInt(1,4)]);
         }
         
-//        luckyCard = magicHand[(rand.nextInt(1,14))];
+       luckyCard.setSuit("Hearts");
+       luckyCard.setValue(10);
         
         //insert code to ask the user for Card value and suit, create their card            
         System.out.println("Please enter suit: ");
@@ -56,13 +57,14 @@ public class CardTrick {
                 }
             break;
         }
-//        if(userCard == luckyCard){
-//            System.out.println("You found the lucky card!");
-//        }
-//        
-//        else{
-//            System.out.println("Not lucky card.");
-//        }
+        
+       if(userCard == luckyCard){
+           System.out.println("You found the lucky card!");
+       }
+       
+       else{
+           System.out.println("Not lucky card.");
+       }
         //Then report the result here
         
         
